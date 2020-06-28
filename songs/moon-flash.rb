@@ -21,7 +21,7 @@ end
 def moon_little_drums
   sample :ambi_haunted_hum, amp: 4, release: 4
   sample :ambi_swoosh, amp: 4, release: 5
-  
+
   drums amp: 5
 end
 
@@ -37,7 +37,7 @@ def verse
     4.times { moon_little_drums }
     sample :loop_3d_printer, amp: 10, release: 10
   end
-  
+
   8.times { moon_little_drums }
 end
 
@@ -48,13 +48,9 @@ def intro
   verse
 end
 
-loop {
-  
+loop do
   intro
   moon_drums
   verse
   moon_little_drums
-  
-}
-
-
+end
